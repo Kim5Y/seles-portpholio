@@ -1,0 +1,340 @@
+@media screen and (max-width:800px) {
+    body {
+        margin: 0px;
+        font-family: arial;
+
+        main {
+            .first-section {
+                background-image: url(/images/about-section-bg.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-bottom: 150px;
+                width: 100%;
+                height: 350px;
+                padding-top: 1px;
+
+
+
+                .div {
+                    background-color: rgba(0, 0, 0, 0.904);
+                    padding-bottom: 140px;
+                    padding-top: 2px;
+
+
+                    .container {
+                        margin: 0px;
+                        padding-top: 50px;
+                        display: flex;
+                        justify-content: center;
+
+
+
+
+
+                        .container-booking-info {
+                            margin-left: 20px;
+                            margin-right: 0px;
+                            max-width: 170px;
+                            width: 100%;
+
+                            h1 {
+                                color: white;
+                                font-size: 19px;
+                            }
+
+                            p {
+                                color: rgb(56, 50, 50);
+                                max-width: 160px;
+                                font-size: .7rem;
+                                width: 100%;
+                            }
+
+                            .animated-btn {
+                                margin-left: 17px;
+                                margin-top: 10px;
+                                border: none;
+                                color: white;
+                                background-color: rgba(0, 0, 0, 0.63);
+                                box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+                                padding: 10px;
+                                max-width: 120px;
+                                border-radius: 20px;
+                            }
+
+
+
+                            .social-icon-div {
+                                max-width: 100px;
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                margin-top: 25px;
+                                margin-left: 30px;
+                                gap: 10px;
+
+
+                            }
+
+                            .email {
+                                margin-top: 25px;
+
+
+                                p {
+                                    margin-left: 30px;
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            .phone-number {
+                                display: flex;
+                                margin-left: 08px;
+                                margin-top: 0px;
+
+                                img {
+                                    max-width: 25px;
+                                }
+
+                                p {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        .container-booking-image {
+                            padding-right: 20px;
+
+                            img {
+                                width: 100%;
+                                max-width: 200px;
+                                border-radius: 10px;
+                                object-fit: contain;
+                                height: 290px;
+                                margin-top: 10px;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .package-section {
+                margin: 50px;
+                margin-top: 20px;
+                margin-bottom: 300px;
+
+                .package-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 32px;
+                }
+            }
+
+
+            .second-section {
+                margin: 50px;
+
+                h1 {
+                    font-size: 40px;
+                    margin-bottom: 0px;
+                }
+
+                .paragraph {
+                    margin-top: 5px;
+                    margin-bottom: 45px;
+                    font-size: 14px;
+                }
+
+                .parent-container {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 60px;
+
+
+                    .profile-div {
+                        font-size: 13px;
+                        display: flex;
+                        max-width: 400px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        padding-left: 17px;
+                        border-radius: 10px;
+                        color: white;
+                        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+                        background-color: rgba(0, 0, 0, 0.842);
+
+                        img {
+                            max-width: 90px;
+                            max-height: 90px;
+                            border-radius: 50px;
+                            object-fit: cover;
+                        }
+
+                        div {
+                            margin-left: 20px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            margin-top: 120px;
+            display: grid;
+            background-color: rgba(0, 0, 0, 0.925);
+            color: white;
+            font-size: 13px;
+
+            .footer-header {
+                h1 {
+                    margin-bottom: 20px;
+                    font-size: auto;
+                }
+            }
+
+            .footer-img-div {
+                margin-bottom: 110px;
+                max-width: 500px;
+                margin-top: 40px;
+                height: 400px;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                    object-fit: contain;
+                }
+            }
+
+            .footer-info {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+
+
+                .first {
+                    margin-bottom: 20px;
+                    margin-top: 30px;
+                }
+            }
+
+            .footer-services {
+                margin: 30px;
+                display: grid;
+            }
+
+            .footer-location-div {
+                margin: 30px;
+                display: grid;
+
+                .footer-address {
+                    margin-bottom: 20px;
+                }
+
+                .footer-phone {
+                    margin-top: 38px;
+
+                    .first {
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .footer-social-medias {
+                display: flex;
+                justify-content: center;
+                margin-top: 90px;
+
+                img {
+                    margin-left: 30px;
+                    width: 40px;
+
+                }
+            }
+
+            .copyRight-secton {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                margin-bottom: 100px;
+                font-size: 12px;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width:650px) {
+    body {
+        main {
+            .package-section {
+                margin: 50px;
+                margin-top: 20px;
+                margin-bottom: 300px;
+
+                .package-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 40px;
+
+
+                    .package-div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 650px;
+                        max-width: 340px;
+                        border-radius: 20px;
+                        box-shadow: 0 15px 45px rgba(0.2, 0.2, 0.2, 0.2);
+
+                        .h3-header-div {
+                            width: 100%;
+                            font-size: 15px;
+
+                            .h3-header {
+                                p{
+                                    text-transform: uppercase;
+                                    font-size: 100%;
+                                }
+
+                            }
+
+                        }
+
+                        .package-image-div {
+                            max-width: 210px;
+                            margin-bottom: 15px;
+
+                            img {
+                                border-radius: 10px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .package-info {
+                            .button-booking {
+                                display: grid;
+                                color: black;
+                                padding: 30px;
+                                border: none;
+                                box-shadow: 0 15px 45px rgba(0.2, 0.2, 0.2, 0.2);
+                                width: 100%;
+                                margin-bottom: 0px;
+                                margin-top: 20px;
+                                font-size: 14px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

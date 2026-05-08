@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: opycials-website
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    autoDeploy: true
+

@@ -1,0 +1,131 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "S_IMODE",
+        "importPath": "stat",
+        "description": "stat",
+        "isExtraImport": true,
+        "detail": "stat",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOps",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Result",
+        "kind": 6,
+        "importPath": "scripts.compress_images",
+        "description": "scripts.compress_images",
+        "peekOfCode": "class Result:\n    path: Path\n    old_bytes: int\n    new_bytes: int\n    changed: bool\n    reason: str\ndef _format_bytes(n: int) -> str:\n    for unit in [\"B\", \"KB\", \"MB\", \"GB\"]:\n        if n < 1024:\n            return f\"{n:.0f}{unit}\" if unit == \"B\" else f\"{n/1:.1f}{unit}\"",
+        "detail": "scripts.compress_images",
+        "documentation": {}
+    },
+    {
+        "label": "compress_one",
+        "kind": 2,
+        "importPath": "scripts.compress_images",
+        "description": "scripts.compress_images",
+        "peekOfCode": "def compress_one(\n    path: Path,\n    *,\n    max_edge: int,\n    jpeg_quality: int,\n    force: bool,\n) -> Result:\n    if path.suffix.lower() not in SUPPORTED_EXTS:\n        return Result(path, 0, 0, False, \"skipped (unsupported)\")\n    try:",
+        "detail": "scripts.compress_images",
+        "documentation": {}
+    },
+    {
+        "label": "iter_images",
+        "kind": 2,
+        "importPath": "scripts.compress_images",
+        "description": "scripts.compress_images",
+        "peekOfCode": "def iter_images(paths: list[Path]) -> list[Path]:\n    files: list[Path] = []\n    for p in paths:\n        if p.is_file():\n            files.append(p)\n            continue\n        if not p.exists():\n            continue\n        for file in p.rglob(\"*\"):\n            if not file.is_file():",
+        "detail": "scripts.compress_images",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.compress_images",
+        "description": "scripts.compress_images",
+        "peekOfCode": "def main(argv: list[str]) -> int:\n    parser = argparse.ArgumentParser(description=\"Lossy/optimized compression for JPG/PNG images.\")\n    parser.add_argument(\n        \"paths\",\n        nargs=\"*\",\n        default=[\"images\", \"Gallery/IMAGES\"],\n        help=\"Files/directories to process (default: images Gallery/IMAGES)\",\n    )\n    parser.add_argument(\"--max-edge\", type=int, default=2000, help=\"Resize if larger than this edge (default: 2000)\")\n    parser.add_argument(\"--jpeg-quality\", type=int, default=75, help=\"JPEG quality 1-95 (default: 75)\")",
+        "detail": "scripts.compress_images",
+        "documentation": {}
+    },
+    {
+        "label": "SUPPORTED_EXTS",
+        "kind": 5,
+        "importPath": "scripts.compress_images",
+        "description": "scripts.compress_images",
+        "peekOfCode": "SUPPORTED_EXTS = {\".jpg\", \".jpeg\", \".png\"}\n@dataclass(frozen=True)\nclass Result:\n    path: Path\n    old_bytes: int\n    new_bytes: int\n    changed: bool\n    reason: str\ndef _format_bytes(n: int) -> str:\n    for unit in [\"B\", \"KB\", \"MB\", \"GB\"]:",
+        "detail": "scripts.compress_images",
+        "documentation": {}
+    }
+]

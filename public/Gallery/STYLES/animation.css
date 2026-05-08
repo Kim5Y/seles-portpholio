@@ -1,0 +1,39 @@
+@media (prefers-reduced-motion: reduce) {
+  html.js .hidden,
+  html.js .downward,
+  html.js .upward {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+}
+
+html.js .hidden,
+html.js .downward,
+html.js .upward {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 0.7s, transform 0.7s, filter 0.7s;
+  will-change: opacity, transform, filter;
+}
+
+html.js .hidden {
+  transform: translateX(-100%);
+}
+
+html.js .downward {
+  transform: translateY(-100%);
+}
+
+html.js .upward {
+  transform: translateY(50%);
+}
+
+html.js .hidden.show,
+html.js .downward.show,
+html.js .upward.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, 0, 0);
+}

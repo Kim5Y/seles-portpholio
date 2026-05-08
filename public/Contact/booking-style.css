@@ -1,0 +1,409 @@
+body {
+    margin: 0px;
+    font-family: arial;
+    max-width: 1350px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    scroll-behavior: smooth;
+
+    main {
+        .hidden {
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(5px);
+            transform: translateX(-100%);
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+
+        @media(prefers-reduced-motion) {
+            .hidden {
+                transition: none;
+            }
+        }
+
+        .downward {
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(5px);
+            transform: translateY(-100%);
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+
+        @media(prefers-reduced-motion) {
+            .hidden {
+                transition: none;
+            }
+        }
+
+        .upward {
+            opacity: 0;
+            transition: all .7s;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+
+        @media(prefers-reduced-motion) {
+            .hidden {
+                transition: none;
+            }
+        }
+
+        .first-section {
+            background-image: url('about-section-bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 150px;
+            width: 100%;
+            height: 600px;
+            padding-top: 0px;
+
+
+
+            .div {
+                background-color: rgba(0, 0, 0, 0.904);
+                padding-bottom: 165px;
+                padding-top: 2px;
+                backdrop-filter: blur(5px);
+
+                .container {
+                    margin: 50px;
+                    padding-top: 30px;
+                    display: flex;
+                    justify-content: center;
+
+
+
+
+
+                    .container-booking-info {
+                        margin-left: 20px;
+                        margin-right: 80px;
+
+                        h1 {
+                            color: white;
+                        }
+
+                        p {
+                            color: rgb(56, 50, 50);
+                            width: 400px;
+                        }
+
+                        .animated-btn {
+                            background-color: black;
+                            margin-left: 48px;
+                            margin-top: 60px;
+                            border: none;
+                            color: white;
+                            background-color: rgba(0, 0, 0, 0.63);
+                            padding: 10px;
+                            width: 150px;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            box-shadow: inset 0px 2px 4px rgba(248, 246, 246, 0.8);
+
+                            a {
+                                text-decoration: none;
+                                color: white;
+                            }
+
+                        }
+
+                        .theanimation {
+                            animation: upDown 1s infinite;
+                        }
+
+                        @keyframes upDown {
+                            0% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(-5px);
+                            }
+
+                            100% {
+                                transform: translateY(0);
+
+                            }
+                        }
+
+
+                        .social-icon-div {
+                            width: 140px;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            margin-top: 25px;
+                            margin-left: 50px;
+                            gap: 10px;
+
+                            img {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .email {
+                            margin-top: 25px;
+
+                            p {
+                                margin-left: 40px;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .phone-number {
+                            display: flex;
+                            margin-left: 40px;
+                            margin-top: 0px;
+
+                            img {
+                                width: 25px;
+                                filter: invert(100%);
+                            }
+
+                            p {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                    .container-booking-image {
+
+                        img {
+                            width: 300px;
+                            border-radius: 10px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .package-section {
+            margin: 40px;
+            padding-bottom: 100px;
+
+
+            h1 {
+                font-family: Pacifico;
+                text-align: center;
+                font-size: 50px;
+                margin-bottom: 70px;
+                margin-top: 200px;
+                padding: 0px;
+
+            }
+
+            .package-wrapper {
+                margin-top: 20px;
+                margin-bottom: 300px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                gap: 20px;
+
+                .package-div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 600px;
+                    max-width: 300px;
+                    border-radius: 30px;
+                    box-shadow: 0 15px 45px rgba(0.2, 0.2, 0.2, 0.2);
+                    overflow: hidden;
+
+                    .h3-header {
+                        padding-top: 0px;
+                        text-transform: uppercase;
+                        font-family: Pacifico;
+
+                    }
+
+                    .package-image-div {
+                        max-width: 200px;
+                        margin-bottom: 15px;
+
+                        img {
+
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .package-info {
+                        .button-booking {
+                            display: grid;
+                            color: black;
+                            padding: 15px;
+                            border: none;
+                            box-shadow: 0 15px 45px rgba(0.2, 0.2, 0.2, 0.2);
+                            width: 100%;
+                            margin-bottom: 0px;
+                            margin-top: 20px;
+                            font-size: 14px;
+                            cursor: pointer;
+                        }
+
+                        .button-booking:hover {
+                            scale: 1.1;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .second-section {
+            margin: 200px;
+
+            h1 {
+                font-size: 60px;
+                margin-bottom: 0px;
+            }
+
+            .paragraph {
+                margin-top: 5px;
+                margin-bottom: 45px;
+            }
+
+            .parent-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 70px;
+
+
+                .profile-div {
+                    display: flex;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 10px;
+                    border-radius: 10px;
+                    color: white;
+                    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+                    background-color: rgba(0, 0, 0, 0.842);
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50px;
+                        object-fit: cover;
+                    }
+
+                    div {
+                        margin-left: 20px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 120px;
+        display: grid;
+        background-color: rgba(0, 0, 0, 0.925);
+        color: white;
+
+        .footer-header {
+            h1 {
+                margin-bottom: 20px;
+                font-size: auto;
+            }
+        }
+
+        .footer-img-div {
+            margin-bottom: 110px;
+            max-width: 500px;
+            margin-top: 40px;
+            height: 400px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+                object-fit: contain;
+            }
+        }
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+
+
+            .first {
+                margin-bottom: 20px;
+                margin-top: 30px;
+            }
+        }
+
+        .footer-services {
+            margin: 30px;
+            display: grid;
+        }
+
+        .footer-location-div {
+            margin: 30px;
+            display: grid;
+
+            .footer-address {
+                margin-bottom: 20px;
+            }
+
+            .footer-phone {
+                margin-top: 38px;
+
+                .first {
+                    margin-bottom: 20px;
+                }
+
+                p {
+
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .footer-social-medias {
+            display: flex;
+            justify-content: center;
+            margin-top: 90px;
+
+            img {
+                margin-left: 30px;
+                width: 40px;
+
+            }
+        }
+
+        .copyRight-secton {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+    }
+
+
+}
