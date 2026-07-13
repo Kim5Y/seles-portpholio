@@ -9,6 +9,10 @@
   padding: 0 20px;
 }
 
+.introInfo {
+  margin-top: 40px;
+}
+
 .introInfo h2 {
   font-size: 4rem;
   font-weight: 700;
@@ -132,8 +136,13 @@
 
 /* Achievements */
 .achievements {
+  min-height: 100vh;
   padding: 100px 50px;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('/images/ng-inspo1.jpg') fixed center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
