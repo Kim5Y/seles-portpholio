@@ -1,0 +1,73 @@
+.navbarWrapper {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.navbar {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.navLinks a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  color: #ccc;
+}
+
+.navLinks a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.contactBtn {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contactBtn:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+}

@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  font-family: arial;
+  font-family: 'Inter', sans-serif;
 
 
   main {
@@ -133,7 +133,7 @@ body {
 @media screen and (max-width:800px) {
   body {
     margin: 0px;
-    font-family: arial;
+    font-family: 'Inter', sans-serif;
     width: 100%;
 
 

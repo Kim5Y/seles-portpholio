@@ -1,0 +1,261 @@
+/* Hero */
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('/images/opswed3.jpg') center/cover no-repeat;
+  padding: 0 20px;
+}
+
+.introInfo h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #fff, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.introInfo p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.btnPrimary {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #fff;
+  color: #000;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+}
+
+/* Why Choose Us */
+.secondDiv {
+  padding: 100px 50px;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('/images/ml5.jpg') fixed center/cover;
+}
+
+.secondDivWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.secondDivWrapper h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.secondDivWrapper > div > p {
+  color: #aaa;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  line-height: 1.7;
+}
+
+.secondDivImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.secondDivImg img {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  transition: transform 0.5s ease;
+}
+
+.secondDivImg img:hover {
+  transform: scale(1.02);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.featureCard {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.featureHead {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.featureHead h5 {
+  font-size: 1.5rem;
+}
+
+.featureCard p {
+  color: #999;
+  line-height: 1.6;
+}
+
+/* Achievements */
+.achievements {
+  padding: 100px 50px;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('/images/ng-inspo1.jpg') fixed center/cover;
+  text-align: center;
+}
+
+.achievements h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.achievements > div > p {
+  color: #ccc;
+  margin-bottom: 60px;
+}
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.statCard {
+  width: 300px;
+  padding: 40px 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.1);
+}
+
+.statNumber {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 100px 50px;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url('/images/ops_9590.jpg') fixed center/cover;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portfolio > div > p {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.galleryScroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding-bottom: 30px;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #111;
+}
+
+.galleryScroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.galleryScroll::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 4px;
+}
+
+.galleryScroll::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.galleryItem {
+  min-width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.05);
+}
+
+.galleryItem p {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  font-weight: 600;
+  transition: bottom 0.3s ease;
+}
+
+.galleryItem:hover p {
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .introInfo h2 { font-size: 2.5rem; }
+  .secondDiv, .achievements, .portfolio { padding: 60px 20px; }
+  .features { grid-template-columns: 1fr; }
+}

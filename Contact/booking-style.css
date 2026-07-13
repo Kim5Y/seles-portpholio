@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: arial;
+    font-family: 'Inter', sans-serif;
     max-width: 1350px;
     width: auto;
     display: flex;
