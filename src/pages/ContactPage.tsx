@@ -17,7 +17,7 @@ export default function ContactPage() {
             <p>Ready to capture your special moments? Get in touch with us to book a session and let's create something beautiful.</p>
 
             <div className={styles.btnGroup}>
-              <a href="https://wa.me/2348167221715" target="_blank" rel="noopener noreferrer" className={styles.btn}>
+              <a href="https://wa.me/2349132725617" target="_blank" rel="noopener noreferrer" className={styles.btn}>
                 WhatsApp Us
               </a>
               <a href="#booking" className={styles.btn}>Book Form</a>
@@ -30,16 +30,11 @@ export default function ContactPage() {
               </div>
               <div className={styles.contactItem}>
                 <Phone size={20} />
-                <span>+234 816 722 1715</span>
+                <span>+234 913 272 5617</span>
               </div>
             </div>
 
-            <div className={styles.socials}>
-              <Mail size={22} color="#aaa" style={{ cursor: 'pointer' }} />
-              <Mail size={22} color="#aaa" style={{ cursor: 'pointer' }} />
-              <Mail size={22} color="#aaa" style={{ cursor: 'pointer' }} />
-              <Mail size={22} color="#aaa" style={{ cursor: 'pointer' }} />
-            </div>
+
           </div>
 
           <div className={styles.imageDiv}>

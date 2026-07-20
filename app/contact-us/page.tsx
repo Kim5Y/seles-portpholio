@@ -20,7 +20,7 @@ export default function ContactPage() {
             <p>Ready to capture your special moments? Get in touch with us to book a session and let's create something beautiful.</p>
             
             <div className={styles.btnGroup}>
-              <a href="https://wa.me/2348167221715" target="_blank" rel="noopener noreferrer" className={styles.btn}>
+              <a href="https://wa.me/2349132725617" target="_blank" rel="noopener noreferrer" className={styles.btn}>
                 WhatsApp Us
               </a>
               <Link href="/booking" className={styles.btn}>
@@ -35,7 +35,7 @@ export default function ContactPage() {
               </div>
               <div className={styles.contactItem}>
                 <Phone />
-                <span>+234 816 722 1715</span>
+                <span>+234 913 272 5617</span>
               </div>
             </div>
 
